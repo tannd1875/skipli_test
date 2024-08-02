@@ -14,7 +14,7 @@ const db = getFirestore(firebase);
 const captionCol = collection(db, "caption");
 
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-const genAI = new GoogleGenerativeAI("AIzaSyDu6nrJO1zBRssSYtbnzoXLk3GUcDybI3A");
+const genAI = new GoogleGenerativeAI("...");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 const Caption = require("../models/caption");
